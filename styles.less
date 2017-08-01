@@ -1,0 +1,63 @@
+/*
+ * Personalised stylesheet (I use this format in conjunction with vim-mode plus
+ * for my editing preferences). I also have various syntax highlighting and 
+ * autofill packages for my most used languages. 
+ * 
+ * It is partially based on resource styles in atom
+ *
+ * 
+ *
+*/
+
+/* tree-view */
+
+.tree-view {
+    
+    background-color: black;
+    font-size: 12px;
+    font-family: Anonymous Pro;
+    font-weight: bold;
+}
+
+
+/* more subtle invisibles */
+.editor {
+    font-size: 16px;
+    font-family: Anonymous Pro;
+    font-weight: bold;
+    background-color: black;
+    .line-numbers {
+        .line-number {
+                padding-left: 6px;
+                padding-right: 6px;
+                font-size: 1em;
+                font-family: Anonymous Pro;
+                font-weight: bold;
+                color: aqua;
+            }
+    }    
+  .invisible-character {
+    color: #504949;
+    opacity: 0.5;
+  }
+  .indent-guide {
+    opacity: 1;
+  }
+}
+
+
+/* thicker cursor */
+.editor .cursor {
+  border-left-width: 3px;    
+}
+
+.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+    background-color: rgba(40, 40, 20, 250)
+}
+
+
+.editor.is-focused .selection .region {
+  background-color: RGBA(0, 255, 255, 0.5);
+  color: #fff !important;
+  text-shadow: none;
+}
